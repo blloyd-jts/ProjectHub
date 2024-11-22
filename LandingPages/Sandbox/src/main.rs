@@ -16,7 +16,7 @@ async fn main() -> std::io::Result<()> {
     println!("listening on http://{}", &addr);
 
     let db_pool = SqlitePoolOptions::new()
-        .connect("sqlite:/Users/blloyd/Developer Projects/Landing Pages/toolsapp.sqlite")
+        .connect("sqlite:/Users/blloyd/Developer Projects/Git Repositories/ProjectHub/LandingPages/Sandbox/toolsapp.sqlite")
         .await
         .map_err(|e| io::Error::new(io::ErrorKind::Other, e))?;
 
