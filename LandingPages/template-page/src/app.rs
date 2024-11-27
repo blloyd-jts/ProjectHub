@@ -88,7 +88,7 @@ pub fn NavBar() -> impl IntoView {
         <header>
             <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 // <!-- Left-side links -->
-                <div class="flex flex-1 justify-start lg:gap-x-12">
+                <div class="absolute left-5 flex flex-1 justify-start lg:gap-x-12">
                     <div class="hidden lg:flex lg:gap-x-6">
                         <div class="relative rounded-lg shadow ring-1 ring-black/5 hover:bg-gray-300 flex items-center h-8 px-4 transition-color duration-500">
                             <a href="/" class="text-sm/6 font-semibold text-gray-900">Home</a>
@@ -117,7 +117,7 @@ pub fn NavBar() -> impl IntoView {
                 </div>
 
                 // <!-- Centered logo -->
-                <div class="flex justify-center">
+                <div class="flex justify-center w-full">
                     <a href="https://jtsfs.com" class="-m-1.5 p-1.5">
                         <span class="sr-only">JTS Financial Services</span>
                         <img class="h-16 w-auto" src="/Users/blloyd/Developer Projects/Git Repositories/ProjectHub/LandingPages/Sandbox/assets/jts-logo.png" alt="Company Logo" />
@@ -214,7 +214,7 @@ fn HomePage() -> impl IntoView {
     view! {
         <div class="bg-gray-100">
             <div class="relative px-6 pt-4 lg:px-8">
-                <div class="mx-auto max-w-2xl py-8 sm:py-12 lg:py-16">
+                <div class="mx-auto max-w-2xl py- sm:py-12 lg:py-16">
                     <div class="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             "View the complete Benefits booklet "
