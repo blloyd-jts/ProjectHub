@@ -214,7 +214,7 @@ fn HomePage() -> impl IntoView {
     view! {
         <div class="bg-gray-100">
             <div class="relative px-6 pt-4 lg:px-8">
-                <div class="mx-auto max-w-2xl py-12 sm:py-16 lg:py-24">
+                <div class="mx-auto max-w-2xl py-8 sm:py-12 lg:py-16">
                     <div class="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             "View the complete Benefits booklet "
