@@ -6,7 +6,7 @@ async fn main() -> std::io::Result<()> {
     use actix_web::*;
     use leptos::*;
     use leptos_actix::{generate_route_list, LeptosRoutes};
-    use sqlx::{migrate, sqlite::SqlitePoolOptions};
+    use sqlx::sqlite::SqlitePoolOptions;
     use leptos_crm::app::*;
 
     let conf = get_configuration(None).await.unwrap();
@@ -19,12 +19,6 @@ async fn main() -> std::io::Result<()> {
         .connect("sqlite:/Users/blloyd/Developer Projects/Git Repositories/ProjectHub/LandingPages/Sandbox/toolsapp.sqlite")
         .await
         .map_err(|e| io::Error::new(io::ErrorKind::Other, e))?;
-
-    migrate!("./migrations/")
-        .run(&db_pool)
-        .await
-        .unwrap_or_else(|_| panic!("could not run sqlx migration {}", whoami::username().as_str()));
-
 
 
     HttpServer::new(move || {

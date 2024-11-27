@@ -1,5 +1,5 @@
 use leptos::*;
-use leptos_router::*;
+// use leptos_router::*;
 
 #[component]
 pub fn FaqTwoColumnCenteredIntro() -> impl IntoView {
@@ -15,7 +15,15 @@ pub fn FaqTwoColumnCenteredIntro() -> impl IntoView {
                         <p class="mt-6 text-base/7 text-gray-600">"Have a different question and can’t find the answer you’re looking for? Reach out to our support team by "<a href="mailto:it@jtsfs.com" class="font-semibold text-indigo-600 hover:text-indigo-500">"sending us an email"</a>" and we’ll get back to you as soon as we can."</p>
                     </div>
                     <div class="mt-20">
-                        <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
+                        <dl class="space-y-16 sm:grid sm:grid-cols-1 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
+                            <div>
+                                <dt class="text-base/7 font-semibold text-gray-900">"What's the best thing about Switzerland?"</dt>
+                                <dd class="mt-2 text-base/7 text-gray-600">"I don't know, but the flag is a big plus."</dd>
+                            </div>
+                            <div>
+                                <dt class="text-base/7 font-semibold text-gray-900">"What's the best thing about Switzerland?"</dt>
+                                <dd class="mt-2 text-base/7 text-gray-600">"I don't know, but the flag is a big plus."</dd>
+                            </div>
                             <div>
                                 <dt class="text-base/7 font-semibold text-gray-900">"What's the best thing about Switzerland?"</dt>
                                 <dd class="mt-2 text-base/7 text-gray-600">"I don't know, but the flag is a big plus."</dd>
