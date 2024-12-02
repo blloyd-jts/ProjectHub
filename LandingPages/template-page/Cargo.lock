@@ -1322,6 +1322,7 @@ dependencies = [
  "leptos_actix",
  "leptos_meta",
  "leptos_router",
+ "mime",
  "regex",
  "serde",
  "sqlx",

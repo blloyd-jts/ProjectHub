@@ -22,6 +22,7 @@ sqlx = { version = "0.8.2", features = ["runtime-tokio", "sqlite"], optional = t
 uuid = { version = "1.11.0", optional = true, features = ["v4"] }
 whoami = { version = "1.5.2", features = ["default"] }
 regex = "1.7"
+mime = "0.3"
 
 [features]
 csr = ["leptos/csr", "leptos_meta/csr", "leptos_router/csr"]

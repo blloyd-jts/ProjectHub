@@ -1,1 +1,1 @@
-pub mod two_column_centered_intro;
+pub mod faq_box;

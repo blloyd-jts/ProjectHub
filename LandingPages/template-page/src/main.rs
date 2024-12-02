@@ -8,18 +8,19 @@ async fn main() -> std::io::Result<()> {
     use leptos_actix::{generate_route_list, LeptosRoutes};
     use sqlx::sqlite::SqlitePoolOptions;
     use leptos_crm::app::*;
+    use actix_web::middleware::DefaultHeaders;
 
     let conf = get_configuration(None).await.unwrap();
     let addr = conf.leptos_options.site_addr;
-    // Generate the list of routes in your Leptos App
     let routes = generate_route_list(App);
     println!("listening on http://{}", &addr);
 
     let db_pool = SqlitePoolOptions::new()
+    
+        // Database path
         .connect("sqlite:/Users/blloyd/Developer Projects/Git Repositories/ProjectHub/LandingPages/Sandbox/toolsapp.sqlite")
         .await
         .map_err(|e| io::Error::new(io::ErrorKind::Other, e))?;
-
 
     HttpServer::new(move || {
         let leptos_options = &conf.leptos_options;
@@ -27,15 +28,24 @@ async fn main() -> std::io::Result<()> {
 
         App::new()
             .app_data(web::Data::new(db_pool.clone()))
+            .wrap(
+                DefaultHeaders::new()
+                    .add(("Content-Type", "application/pdf"))
+                    .add(("Content-Disposition", "inline"))
+            )
             // serve JS/WASM/CSS from `pkg`
-            .service(Files::new("/pkg", format!("{site_root}/pkg")))
+            .service(Files::new("/pkg", format!("{site_root}/pkg")).show_files_listing())
             // serve other assets from the `assets` directory
-            .service(Files::new("/Users/blloyd/Developer Projects/Git Repositories/ProjectHub/LandingPages/Sandbox/assets", site_root))
+            .service(
+                Files::new("/assets", "./assets")
+                    .show_files_listing()
+                    .use_hidden_files()
+                    .prefer_utf8(true)
+            )
             // serve the favicon from /favicon.ico
             .service(favicon)
             .leptos_routes(leptos_options.to_owned(), routes.to_owned(), App)
             .app_data(web::Data::new(leptos_options.to_owned()))
-        //.wrap(middleware::Compress::default())
     })
     .bind(&addr)?
     .run()
