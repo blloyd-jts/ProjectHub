@@ -128,34 +128,34 @@ pub fn NavBar() -> impl IntoView {
 
                         // Button 1
                         <div class="relative rounded-lg shadow ring-1 ring-black/5 hover:bg-gray-300 flex items-center h-8 px-4 transition-color duration-500">
-                            <a href="/" class="text-sm/6 font-semibold text-gray-900">Home</a>
+                            <a href="/" class="text-sm/6 font-semibold text-gray-900">"Home"</a>
                         </div>
 
                         // Button 2
                         <div class="relative rounded-lg shadow ring-1 ring-black/5 hover:bg-gray-300 flex items-center h-8 px-4 transition-color duration-500">
-                            <a href="claims" class="text-sm/6 font-semibold text-gray-900">Claims</a>
+                            <a href="claims" class="text-sm/6 font-semibold text-gray-900">"Claims"</a>
                         </div>
 
                         // Button 3
                         <div class="relative rounded-lg shadow ring-1 ring-black/5 hover:bg-gray-300 flex items-center h-8 px-4 transition-color duration-500">
-                            <a href="hsa" class="text-sm/6 font-semibold text-gray-900">HSA</a>
+                            <a href="hsa" class="text-sm/6 font-semibold text-gray-900">"HSA"</a>
                         </div>
 
                         // Button 4
                         <div class="relative rounded-lg shadow ring-1 ring-black/5 hover:bg-gray-300 flex items-center h-8 px-4 transition-color duration-500">
-                            <a href="faq" class="text-sm/6 font-semibold text-gray-900">FAQ</a>
+                            <a href="faq" class="text-sm/6 font-semibold text-gray-900">"FAQ"</a>
                         </div>
 
                         // Button 5
                         <div class="relative rounded-lg shadow ring-1 ring-black/5 hover:bg-gray-300 flex items-center h-8 px-4 transition-color duration-500">
-                            <a href="http://booklets.ebiteam.com/books/ilyy/#p=1" class="text-sm/6 font-semibold text-gray-900">Booklet</a>
+                            <a href="http://booklets.ebiteam.com/books/ilyy/#p=1" class="text-sm/6 font-semibold text-gray-900">"Booklet"</a>
                         </div>
                     </div>
 
                     // Mobile menu toggle button
                     <div class="flex lg:hidden">
                         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                            <span class="sr-only">Open main menu</span>
+                            <span class="sr-only">"Open main menu"</span>
                             <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
@@ -166,7 +166,7 @@ pub fn NavBar() -> impl IntoView {
                 // Centered logo
                 <div class="flex justify-center w-full">
                     <a href="https://jtsfs.com" class="-m-1.5 p-1.5">
-                        <span class="sr-only">JTS Financial Services</span>
+                        <span class="sr-only">"JTS Financial Services"</span>
                         <img class="h-16 w-auto" src="/assets/jts-logo.png" alt="Company Logo" />
                     </a>
                 </div>
@@ -184,14 +184,14 @@ pub fn NavBar() -> impl IntoView {
                     <div class="flex items-center justify-between">
                         <div class="flex flex-1">
                             <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                                <span class="sr-only">Close menu</span>
+                                <span class="sr-only">"Close menu"</span>
                                 <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                                 </svg>
                             </button>
                         </div>
                         <a href="https://jtsfs.com" class="-m-1.5 p-1.5">
-                            <span class="sr-only">JTS Financial Services</span>
+                            <span class="sr-only">"JTS Financial Services"</span>
                             <img class="h-16 w-auto" src="/assets/jts-logo.png" alt="Company Logo" />
                         </a>
                     </div>
@@ -199,27 +199,27 @@ pub fn NavBar() -> impl IntoView {
 
                         // Button 1
                         <div class="relative rounded-lg shadow ring-1 ring-black/5 hover:bg-gray-300 p-6 sm:p-8">
-                            <a href="/" class="text-sm/6 font-semibold text-gray-900">Home</a>
+                            <a href="/" class="text-sm/6 font-semibold text-gray-900">"Home"</a>
                         </div>
 
                         // Button 2
                         <div class="relative rounded-lg shadow ring-1 ring-black/5 hover:bg-gray-300 p-6 sm:p-8">
-                            <a href="claims" class="text-sm/6 font-semibold text-gray-900">Claims</a>
+                            <a href="claims" class="text-sm/6 font-semibold text-gray-900">"Claims"</a>
                         </div>
 
                         // Button 3
                         <div class="relative rounded-lg shadow ring-1 ring-black/5 hover:bg-gray-300 p-6 sm:p-8">
-                            <a href="hsa" class="text-sm/6 font-semibold text-gray-900">HSA</a>
+                            <a href="hsa" class="text-sm/6 font-semibold text-gray-900">"HSA"</a>
                         </div>
 
                         // Button 4
                         <div class="relative rounded-lg shadow ring-1 ring-black/5 hover:bg-gray-300 p-6 sm:p-8">
-                            <a href="faq" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">FAQ</a>
+                            <a href="faq" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">"FAQ"</a>
                         </div>
 
                         // Button 5
                         <div class="relative rounded-lg shadow ring-1 ring-black/5 hover:bg-gray-300 p-6 sm:p-8">
-                            <a href="http://booklets.ebiteam.com/books/ilyy/#p=1" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Booklet</a>
+                            <a href="http://booklets.ebiteam.com/books/ilyy/#p=1" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">"Booklet"</a>
                         </div>
                     </div>
                 </div>
@@ -329,6 +329,16 @@ fn NotFound() -> impl IntoView {
     }
 
     view! {
-        <h1>"Not Found"</h1>
+        <main class="grid min-h-full place-items-center bg-gray-100 px-6 py-24 sm:py-32 lg:px-8">
+            <div class="text-center">
+                <p class="text-5xl font-semibold text-indigo-600">"404"</p>
+                <h1 class="mt-4 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">"Page not found"</h1>
+                <p class="mt-6 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">"Sorry, we couldn’t find the page you’re looking for."</p>
+                <div class="mt-10 flex items-center justify-center gap-x-6">
+                    <a href="/" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">"Go back home"</a>
+                    <a href="mailto:it@jtsfs.com" class="text-sm font-semibold text-gray-900">"Contact support "<span aria-hidden="true"></span></a>
+                </div>
+            </div>
+        </main>
     }
 }
